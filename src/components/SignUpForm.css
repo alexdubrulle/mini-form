@@ -1,18 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
-body {
-  font-family: "Exo", sans-serif;
-  background-color: rgb(60, 59, 59);
+.Formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-left: 45rem;
+  max-width: 400px;
+  padding: 30px;
+  color: white;
+  border: 1px solid #ccc;
+  background-color: #0a0000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-h1 {
-  margin-left: 42rem;
-  margin-top: 3rem;
-  font-size: 3rem;
-  color: black;
-  text-shadow: 0 0 2px #0d0d0d, 0 0 30px #001111, 0px 0px 5px #00fffc,
-    0 0 150px #00fffc;
-  color: #00fffc;
+.Formulaire label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Formulaire input[type="text"],
+.Formulaire input[type="email"],
+.Formulaire input[type="password"],
+.Formulaire input[type="phone"],
+.Formulaire input[type="DateOfBirth"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.Formulaire input[type="text"]:focus,
+.Formulaire input[type="email"]:focus,
+.Formulaire input[type="password"]:focus,
+.Formulaire input[type="phone"]:focus,
+.Formulaire input[type="DateOfBirth"]:focus {
+  outline: none;
+  border-color: #007bff; /* Couleur lorsque le champ est en focus */
+}
+
+.Formulaire button[type="submit"] {
+  background-color: #129dbc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Formulaire button[type="submit"]:hover {
+  background-color: #0056b3; /* Couleur au survol */
 }
 
 .context {
